@@ -7,9 +7,10 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
-
+@AllArgsConstructor
+@Data
+@NoArgsConstructor
 @Entity
-@Table(name = "clicks")
 public class Click {
 
     @Id

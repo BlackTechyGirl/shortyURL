@@ -6,7 +6,6 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "shortened_urls")
 public class ShortenedURL {
 
     @Id
