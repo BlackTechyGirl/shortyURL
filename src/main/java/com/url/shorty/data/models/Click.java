@@ -1,14 +1,14 @@
 package com.url.shorty.data.models;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
 
 @AllArgsConstructor
 @Data
+@Getter
+@Setter
 @NoArgsConstructor
 @Entity
 public class Click {
