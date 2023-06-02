@@ -5,7 +5,6 @@ import com.url.shorty.data.dto.request.RegisterUserRequest;
 import com.url.shorty.data.dto.response.RegisterUserResponse;
 import com.url.shorty.data.models.User;
 import com.url.shorty.data.repositories.UserRepository;
-import com.url.shorty.mapper.Mapper;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

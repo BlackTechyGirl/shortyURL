@@ -6,4 +6,5 @@ import com.url.shorty.data.dto.response.RegisterUserResponse;
 public interface UserService {
 
     RegisterUserResponse registerUser(RegisterUserRequest request);
+
 }
