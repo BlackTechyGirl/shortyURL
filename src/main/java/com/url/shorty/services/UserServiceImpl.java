@@ -38,8 +38,9 @@ public class UserServiceImpl implements UserService {
                 .build();
     }
 
+    @Override
     public LoginResponse login(LoginUserRequest request){
-        User user = userRepository.findByEmail(request.getEmail())
+        User user = (User) userRepository.findByEmail(request.getEmail())
                 .orElseThrow(()-> new UserLoginException("User does not exist"));
         LoginResponse response = new LoginResponse();
         if (user.getPassword().equals(request.getPassword())){
