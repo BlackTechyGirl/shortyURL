@@ -1,6 +1,5 @@
 package com.url.shorty.data.dto.request;
 
-
 import lombok.*;
 
 @Getter
@@ -8,7 +7,9 @@ import lombok.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class LoginUserRequest {
+
+public class DeleteShortenedURLRequest {
+    private String shortUrl;
     private String username;
     private String password;
 }

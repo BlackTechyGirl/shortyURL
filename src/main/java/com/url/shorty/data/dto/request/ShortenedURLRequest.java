@@ -8,7 +8,9 @@ import lombok.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class LoginUserRequest {
+
+public class ShortenedURLRequest {
+    private String longUrl;
     private String username;
     private String password;
 }

@@ -1,7 +1,9 @@
 package com.url.shorty.controller;
 
 
+import com.url.shorty.data.dto.request.LoginUserRequest;
 import com.url.shorty.data.dto.request.RegisterUserRequest;
+import com.url.shorty.data.dto.response.LoginResponse;
 import com.url.shorty.data.dto.response.RegisterUserResponse;
 import com.url.shorty.services.UserService;
 import lombok.AllArgsConstructor;
@@ -20,5 +22,11 @@ public class UserController {
     public ResponseEntity<?> registerUser(@RequestBody RegisterUserRequest request){
         RegisterUserResponse response = userService.registerUser(request);
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<?> login(@RequestBody LoginUserRequest request){
+        LoginResponse response = userService.login(request);
+        return ResponseEntity.status(HttpStatus.OK).body(response);
     }
 }
